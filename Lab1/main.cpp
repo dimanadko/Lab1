@@ -13,7 +13,7 @@ using namespace std;
 
 int getIndexOfElement(char arr[96], char needed ) {
     for (int i = 0; i < 96; i++) {
-        if (needed<arr[i]) {
+        if (needed==arr[i]) {
             return i;
         };
     }
@@ -27,7 +27,7 @@ string encrypt (string message, string key, char matrix[96][96])
     for (int i=0; i<message.length(); i++){
         if(j>=key.length())
             j=0;
-        crypted[i]=matrix[(int)message[i]-31][(int)key[j]-31];
+        crypted[i]=matrix[(int)message[i]-32][(int)key[j]-32];
         j++;
         cout<<crypted[i];
     }
@@ -35,16 +35,12 @@ string encrypt (string message, string key, char matrix[96][96])
     return crypted;
 }
 
-//does not work
 string decrypt (string crypted, string key, char matrix[96][96])
 {
-    int j = 0;
     char decrypted[crypted.length()];
     for (int i=0; i<crypted.length(); i++){
-        if(j>=key.length())
-            j=0;
-        decrypted[i]=matrix[(int)crypted[i]-31][(int)key[j]-31];
-        j++;
+        int decryptedIndex = getIndexOfElement(matrix[(int)key[i%key.length()]-32], crypted[i]);
+        decrypted[i]=matrix[decryptedIndex][0];
         cout<<decrypted[i];
     }
     cout<<endl;
@@ -60,10 +56,10 @@ int main(){
     for (int i=0; i<96; i++){
         for (int j=0; j<96; j++){
             matrix[i][j]=' '+((i+j)%96);
-            cout<<matrix[i][j];
         }
-        cout<<endl;
     };
     string crypted = encrypt(message, key, matrix);
+    string decrypted = decrypt(crypted, key, matrix);
+
     return 0;
 }
