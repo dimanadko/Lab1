@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab1/main.cpp"
-            timestampString = "539700092.709644"
+            timestampString = "539707960.487573"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab1/main.cpp"
-            timestampString = "539700092.710313"
+            timestampString = "539707960.4887871"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab1/main.cpp"
-            timestampString = "539700092.7108639"
+            timestampString = "539707960.489506"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab1/main.cpp"
-            timestampString = "539700092.711347"
+            timestampString = "539707960.490229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "main()"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getIndexOfElement(char arr[96], char needed )"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

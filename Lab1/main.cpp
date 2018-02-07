@@ -11,26 +11,59 @@
 #include <stdio.h>
 using namespace std;
 
+int getIndexOfElement(char arr[96], char needed ) {
+    for (int i = 0; i < 96; i++) {
+        if (needed<arr[i]) {
+            return i;
+        };
+    }
+    return -1;
+};
+
+string encrypt (string message, string key, char matrix[96][96])
+{
+    int j = 0;
+    char crypted[message.length()];
+    for (int i=0; i<message.length(); i++){
+        if(j>=key.length())
+            j=0;
+        crypted[i]=matrix[(int)message[i]-31][(int)key[j]-31];
+        j++;
+        cout<<crypted[i];
+    }
+    cout<<endl;
+    return crypted;
+}
+
+//does not work
+string decrypt (string crypted, string key, char matrix[96][96])
+{
+    int j = 0;
+    char decrypted[crypted.length()];
+    for (int i=0; i<crypted.length(); i++){
+        if(j>=key.length())
+            j=0;
+        decrypted[i]=matrix[(int)crypted[i]-31][(int)key[j]-31];
+        j++;
+        cout<<decrypted[i];
+    }
+    cout<<endl;
+    return decrypted;
+}
+
+
 int main(){
-    string message, key="key";
-    char matrix [26][26];
+    string message, key="abc";
+    char matrix [96][96];
     cout << "Give message: ";
     cin >> message;
-    char crypted[message.length()];
-    for (int i=0; i<26; i++){
-        for (int j=0; j<26; j++){
-            matrix[i][j]='a'+(i+j>25?i+j-26:i+j);
+    for (int i=0; i<96; i++){
+        for (int j=0; j<96; j++){
+            matrix[i][j]=' '+((i+j)%96);
+            cout<<matrix[i][j];
         }
+        cout<<endl;
     };
-    int j = 0;
-    for (int i=0; i<message.length(); i++){
-        if(j>=key.length()){
-            j=0;
-        }
-        crypted[i]=matrix[(int)message[i]-96][(int)key[j]-96];
-        j++;
-    }
-    printf(crypted);
-    cout<<endl;
+    string crypted = encrypt(message, key, matrix);
     return 0;
 }
