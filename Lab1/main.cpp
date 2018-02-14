@@ -58,7 +58,9 @@ int main(){
             matrix[i][j]=' '+((i+j)%96);
         }
     };
+    cout<<"Crypted message: ";
     string crypted = encrypt(message, key, matrix);
+    cout<<"Decrypted message: ";
     string decrypted = decrypt(crypted, key, matrix);
 
     return 0;

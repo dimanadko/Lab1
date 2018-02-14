@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab1/main.cpp"
-            timestampString = "539714751.131602"
+            timestampString = "540289761.9337389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "decrypt (string crypted, string key, char matrix[96][96])"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab1/main.cpp"
-            timestampString = "539714751.132792"
+            timestampString = "540289761.934163"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "decrypt (string crypted, string key, char matrix[96][96])"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab1/main.cpp"
-            timestampString = "539714751.133569"
+            timestampString = "540289761.934587"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "decrypt (string crypted, string key, char matrix[96][96])"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,11 +58,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab1/main.cpp"
-            timestampString = "539714751.1341439"
+            timestampString = "540289761.935015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
             endingLineNumber = "22"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab1/main.cpp"
+            timestampString = "540289761.9353091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "getIndexOfElement(char arr[96], char needed )"
             landmarkType = "9">
          </BreakpointContent>
@@ -74,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lab1/main.cpp"
-            timestampString = "539714751.135159"
+            timestampString = "540289761.935685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "getIndexOfElement(char arr[96], char needed )"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
